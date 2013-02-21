@@ -1,0 +1,79 @@
+----item----
+version: 1
+id: {19E29B79-58CB-4B1B-A2AC-1A38A4E76B5A}
+database: master
+path: /sitecore/system/Modules/Ecommerce/Catalogs/Product Catalog
+parent: {825FE488-3516-4818-A636-91DCE28005C3}
+name: Product Catalog
+master: {00000000-0000-0000-0000-000000000000}
+template: {CD4E1A56-7DB3-4257-8C00-D551D242C891}
+templatekey: Catalog
+
+----field----
+field: {DD092E0F-9139-4509-A44E-52CE24FB32AD}
+name: Templates
+key: templates
+content-length: 233
+
+{B87EFAE7-D3D5-4E07-A6FC-012AAA13A6CF}|{95681CF6-3635-49EC-A09A-CC548FA62389}|{A93FA2C4-3AE4-45C2-8C3F-EFA7E129537E}|{8FAC8E12-7459-43F8-97E8-1BC6840B9226}|{7BD2FBC6-061B-40DD-B1F9-D8603A701624}|{B072B7C7-6F3F-4316-B8D7-010629AEBEF1}
+----field----
+field: {916599FB-8464-48A6-B530-E4BCDD41C8E1}
+name: Catalog Data Source
+key: catalog data source
+content-length: 100
+
+Sitecore.Ecommerce.Shell.Applications.Catalogs.Models.Search.ProductsSource,Sitecore.Ecommerce.Shell
+----field----
+field: {71D895D7-94B7-4691-A51B-6C833F8ACAB2}
+name: Editor Fields
+key: editor fields
+content-length: 311
+
+{E2A1CC5E-BC4D-4BD7-A32A-BF973409A1F8}|{38D4AC5F-2C70-48AE-BC83-9B21A269BD15}|{20F65A24-E83E-44B1-B5C4-C8EC9D77B57E}|{6AB95C5C-BEA6-41BF-B6E3-B36C3228A5E9}|{A457165A-E6C0-45AD-91BF-2C7407CB86E5}|{B388EF11-6A16-4917-9FC1-FCAC0286A451}|{B63E42AE-A2E0-452B-AF39-F843B9C7B3E0}|{C6FF3C8A-9F84-41DF-B493-FE2303F03C69}
+----version----
+language: en
+version: 1
+revision: b1fe3a53-9d01-4182-8ad2-74412a7dbd84
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20100205T122900
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+b1fe3a53-9d01-4182-8ad2-74412a7dbd84
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20110518T154016:634413300164244880
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

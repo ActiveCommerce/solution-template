@@ -1,0 +1,194 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{aa525d35-8ac7-4f9a-b0a4-e0d70e2ec223}</ProjectGuid>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <SourceWebPhysicalPath>..\MyActiveCommerce.Web</SourceWebPhysicalPath>
+    <SourceWebProject>{275bcc24-7f3e-403b-8116-302cf05b402c}|MyActiveCommerce.Web\MyActiveCommerce.Web.csproj</SourceWebProject>
+    <SourceWebVirtualPath>/MyActiveCommerce.Web.csproj</SourceWebVirtualPath>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <EnableUpdateable>true</EnableUpdateable>
+    <UseMerge>true</UseMerge>
+    <SingleAssemblyName>Sitecore.Master</SingleAssemblyName>
+    <UseWebConfigReplacement>false</UseWebConfigReplacement>
+    <DeleteAppCodeCompiledFiles>true</DeleteAppCodeCompiledFiles>
+    <LegacyFileReplacement>false</LegacyFileReplacement>
+    <AssemblyName>Sitecore.Master</AssemblyName>
+    <Name>Sitecore.Master</Name>
+    <RootNamespace>Sitecore.Master</RootNamespace>
+    <SitecoreDatabase>master</SitecoreDatabase>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>.\Debug\</OutputPath>
+    <RecursiveDeployAction>Ignore</RecursiveDeployAction>
+    <SitecoreDeployFolder>c:\Sitecore\myactivecommerce\Website</SitecoreDeployFolder>
+    <SitecoreWebUrl>http://myactivecommerce</SitecoreWebUrl>
+    <SitecoreAccessGuid>f8f88969-1b06-4e98-a119-6191a9afcef9</SitecoreAccessGuid>
+    <InstallSitecoreConnector>True</InstallSitecoreConnector>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <OutputPath>.\Release\</OutputPath>
+    <RecursiveDeployAction>Ignore</RecursiveDeployAction>
+    <PackageAuthor>
+    </PackageAuthor>
+    <PackagePublisher>
+    </PackagePublisher>
+    <PackageVersion>
+    </PackageVersion>
+    <PackageReadme>
+    </PackageReadme>
+    <SitecoreAssemblyPath>
+    </SitecoreAssemblyPath>
+    <GeneratePackage>False</GeneratePackage>
+    <SeperateFilesAndItems>False</SeperateFilesAndItems>
+    <AddDateTimeToPackageName>False</AddDateTimeToPackageName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'QA' ">
+    <DebugSymbols>true</DebugSymbols>
+    <RecursiveDeployAction>SitecoreRecycle</RecursiveDeployAction>
+    <SitecoreDeployFolder>
+    </SitecoreDeployFolder>
+    <SitecoreWebUrl>
+    </SitecoreWebUrl>
+    <SitecoreAccessGuid>4efb251c-b9bd-4778-9015-d02301feba71</SitecoreAccessGuid>
+    <InstallSitecoreConnector>True</InstallSitecoreConnector>
+    <OutputPath>.\QA\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AssemblyAttributes Include="AssemblyFileVersion">
+      <Value>$(AssemblyFileVersion)</Value>
+    </AssemblyAttributes>
+    <AssemblyAttributes Include="AssemblyVersion">
+      <Value>$(AssemblyVersion)</Value>
+    </AssemblyAttributes>
+  </ItemGroup>
+  <ItemGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <Replacement Include="..\Config\Debug\">
+      <TargetPath>.\</TargetPath>
+      <IsFolder>True</IsFolder>
+      <IsRelative>True</IsRelative>
+    </Replacement>
+  </ItemGroup>
+  <ItemGroup Condition=" '$(Configuration)' == 'QA' ">
+    <Replacement Include="..\Config\QA\">
+      <TargetPath>.\</TargetPath>
+      <IsFolder>True</IsFolder>
+      <IsRelative>True</IsRelative>
+    </Replacement>
+  </ItemGroup>
+  <ItemGroup Condition=" '$(Configuration)' == 'Release' ">
+    <Replacement Include="..\Config\Release\">
+      <TargetPath>.\</TargetPath>
+      <IsFolder>True</IsFolder>
+      <IsRelative>True</IsRelative>
+    </Replacement>
+  </ItemGroup>
+  <ItemGroup>
+    <SitecoreItem Include="sitecore\commerce.item">
+      <Icon>/temp/IconCache/activecommerce-icons/32x32/logo-orange.png</Icon>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\commerce\lookup.item">
+      <Icon>/temp/IconCache/Business/32x32/data_table.png</Icon>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\commerce\media.item">
+      <Icon>/temp/IconCache/people/32x32/movie.png</Icon>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\commerce\products.item">
+      <Icon>/temp/IconCache/people/16x16/box.png</Icon>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\commerce\promos.item">
+      <Icon>/temp/IconCache/applications/32x32/star_yellow.png</Icon>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content.item">
+      <Icon>/temp/IconCache/People/16x16/cubes_blue.png</Icon>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+      <ItemDeployment>DeployOnce</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout.item">
+      <Icon>/temp/IconCache/Applications/16x16/windows.png</Icon>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Layouts.item">
+      <Icon>/temp/IconCache/Applications/16x16/windows.png</Icon>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings.item">
+      <Icon>/temp/IconCache/Applications/16x16/folder.png</Icon>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts.item">
+      <Icon>/temp/IconCache/Software/16x16/elements_selection.png</Icon>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\system.item">
+      <Icon>/temp/IconCache/People/16x16/workstation1.png</Icon>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\system\Modules.item">
+      <Icon>/temp/IconCache/Software/16x16/jar.png</Icon>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\system\Modules\Ecommerce.item">
+      <Icon>/temp/IconCache/business/32x32/shoppingcart.png</Icon>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\system\Modules\Ecommerce\Catalogs.item">
+      <Icon>/temp/IconCache/Business/32x32/tables_edit.png</Icon>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\system\Modules\Ecommerce\Catalogs\Product Catalog.item">
+      <Icon>/temp/IconCache/Business/32x32/table_view.png</Icon>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\system\Modules\Ecommerce\Catalogs\Product Catalog\Checklists.item">
+      <Icon>/temp/IconCache/Business/32x32/table_preferences.png</Icon>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\system\Modules\Ecommerce\Catalogs\Product Catalog\Search Text Fields.item">
+      <Icon>/temp/IconCache/Business/32x32/row.png</Icon>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\system\Modules\Ecommerce\Catalogs\Product Catalog\Search Text Fields\Product Code.item">
+      <Icon>/temp/IconCache/Business/32x32/row.png</Icon>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\system\Modules\Ecommerce\Catalogs\Product Catalog\Search Text Fields\Title.item">
+      <Icon>/temp/IconCache/Business/32x32/row.png</Icon>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates.item">
+      <Icon>/temp/IconCache/Applications/16x16/form_blue.png</Icon>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\producttypes.item">
+      <Icon>/temp/IconCache/activecommerce-icons/32x32/model.png</Icon>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+  </ItemGroup>
+  <ItemGroup>
+    <ExcludedAssemblies Include="Sitecore.%2a.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" />
+</Project>
