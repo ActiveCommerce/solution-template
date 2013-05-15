@@ -102,6 +102,12 @@
   <ItemGroup>
     <Content Include="Release\App_Config\Include\MailServer.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="QA\App_Config\Include\Unic.Modules.ErrorManager.xQA.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Release\App_Config\Include\Unic.Modules.ErrorManager.xRelease.config" />
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
   <ProjectExtensions>
