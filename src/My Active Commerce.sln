@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyActiveCommerce.Web", "MyActiveCommerce.Web\MyActiveCommerce.Web.csproj", "{275BCC24-7F3E-403B-8116-302CF05B402C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyActiveCommerce.Classes", "MyActiveCommerce.Classes\MyActiveCommerce.Classes.csproj", "{DC4722F9-4313-498B-98BD-AFFD9E028DEC}"
