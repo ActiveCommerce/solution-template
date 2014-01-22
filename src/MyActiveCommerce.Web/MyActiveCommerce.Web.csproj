@@ -9,6 +9,10 @@
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
   </PropertyGroup>
   <Import Project="..\deploy.targets" Condition="Exists('..\deploy.targets')" />
   <PropertyGroup>
@@ -80,6 +84,12 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>$(SitecorePath)\bin\Microsoft.Practices.Unity.dll</HintPath>
     </Reference>
+    <Reference Include="Sitecore.ContentSearch">
+      <HintPath>$(SitecorePath)\bin\Sitecore.ContentSearch.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.ContentSearch.Linq">
+      <HintPath>$(SitecorePath)\bin\Sitecore.ContentSearch.Linq.dll</HintPath>
+    </Reference>
     <Reference Include="Sitecore.Ecommerce.DomainModel">
       <HintPath>$(SitecorePath)\bin\Sitecore.Ecommerce.DomainModel.dll</HintPath>
     </Reference>
@@ -131,11 +141,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Config\Include\SiteDefinition.config" />
-    <Content Include="App_Config\Include\EnsureDataSourceIsGUID.config" />
-    <Content Include="App_Config\FieldTypes.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="App_Config\Include\AddParagraphTagIfMissing.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MyActiveCommerce.Classes\MyActiveCommerce.Classes.csproj">
@@ -149,9 +154,6 @@
   <ItemGroup>
     <Content Include="App_Config\Compilation.config" />
     <Content Include="App_Config\CustomErrors.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="App_Config\Include\Indexing.UpdateInterval.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Config\Include\DataFolder.config" />

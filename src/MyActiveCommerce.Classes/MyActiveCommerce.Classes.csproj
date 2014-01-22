@@ -67,6 +67,12 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>$(SitecorePath)\bin\Microsoft.Practices.Unity.dll</HintPath>
     </Reference>
+    <Reference Include="Sitecore.ContentSearch">
+      <HintPath>$(SitecorePath)\bin\Sitecore.ContentSearch.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.ContentSearch.Linq">
+      <HintPath>$(SitecorePath)\bin\Sitecore.ContentSearch.Linq.dll</HintPath>
+    </Reference>
     <Reference Include="Sitecore.Ecommerce.DomainModel">
       <HintPath>$(SitecorePath)\bin\Sitecore.Ecommerce.DomainModel.dll</HintPath>
     </Reference>
@@ -93,9 +99,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Data\Fields\LayoutField.cs" />
-    <Compile Include="Events\EnsureDataSourceIsGUID.cs" />
-    <Compile Include="Pipelines\SaveRichTextContent\AddParagraphTagIfMissing.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

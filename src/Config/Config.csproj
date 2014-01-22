@@ -20,6 +20,10 @@
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -84,7 +88,6 @@
     <Content Include="QA\App_Config\CustomErrors.config">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="QA\App_Config\Include\Agents.DatabaseAgent.Master.config" />
     <Content Include="QA\App_Config\Include\DataFolder.config" />
     <Content Include="QA\App_Config\Include\ErrorPages.config" />
   </ItemGroup>
@@ -92,8 +95,9 @@
     <Content Include="Release\App_Config\Compilation.config" />
     <Content Include="Release\App_Config\CustomErrors.config" />
     <Content Include="Release\App_Config\Include\Agents.config" />
-    <Content Include="Release\App_Config\Include\Agents.DatabaseAgent.Master.config" />
-    <Content Include="Release\App_Config\Include\DataFolder.config" />
+    <Content Include="Release\App_Config\Include\DataFolder.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Release\App_Config\Include\ErrorPages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -110,9 +114,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="QA\App_Config\Include\Unic.Modules.ErrorManager.xQA.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Release\App_Config\Include\Unic.Modules.ErrorManager.xRelease.config" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

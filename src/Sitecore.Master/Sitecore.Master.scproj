@@ -135,48 +135,6 @@
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system.item">
-      <Icon>/temp/IconCache/People/16x16/workstation1.png</Icon>
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Modules.item">
-      <Icon>/temp/IconCache/Software/16x16/jar.png</Icon>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Modules\Ecommerce.item">
-      <Icon>/temp/IconCache/business/32x32/shoppingcart.png</Icon>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Modules\Ecommerce\Catalogs.item">
-      <Icon>/temp/IconCache/Business/32x32/tables_edit.png</Icon>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Modules\Ecommerce\Catalogs\Product Catalog.item">
-      <Icon>/temp/IconCache/Business/32x32/table_view.png</Icon>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Modules\Ecommerce\Catalogs\Product Catalog\Checklists.item">
-      <Icon>/temp/IconCache/Business/32x32/table_preferences.png</Icon>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Modules\Ecommerce\Catalogs\Product Catalog\Search Text Fields.item">
-      <Icon>/temp/IconCache/Business/32x32/row.png</Icon>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Modules\Ecommerce\Catalogs\Product Catalog\Search Text Fields\Product Code.item">
-      <Icon>/temp/IconCache/Business/32x32/row.png</Icon>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Modules\Ecommerce\Catalogs\Product Catalog\Search Text Fields\Title.item">
-      <Icon>/temp/IconCache/Business/32x32/row.png</Icon>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
     <SitecoreItem Include="sitecore\templates.item">
       <Icon>/temp/IconCache/Applications/16x16/form_blue.png</Icon>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
