@@ -70,9 +70,6 @@
     <Reference Include="Sitecore.ContentSearch">
       <HintPath>$(SitecorePath)\bin\Sitecore.ContentSearch.dll</HintPath>
     </Reference>
-    <Reference Include="Sitecore.ContentSearch.Linq">
-      <HintPath>$(SitecorePath)\bin\Sitecore.ContentSearch.Linq.dll</HintPath>
-    </Reference>
     <Reference Include="Sitecore.Ecommerce.DomainModel">
       <HintPath>$(SitecorePath)\bin\Sitecore.Ecommerce.DomainModel.dll</HintPath>
     </Reference>

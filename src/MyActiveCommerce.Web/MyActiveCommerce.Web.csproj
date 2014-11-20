@@ -87,9 +87,6 @@
     <Reference Include="Sitecore.ContentSearch">
       <HintPath>$(SitecorePath)\bin\Sitecore.ContentSearch.dll</HintPath>
     </Reference>
-    <Reference Include="Sitecore.ContentSearch.Linq">
-      <HintPath>$(SitecorePath)\bin\Sitecore.ContentSearch.Linq.dll</HintPath>
-    </Reference>
     <Reference Include="Sitecore.Ecommerce.DomainModel">
       <HintPath>$(SitecorePath)\bin\Sitecore.Ecommerce.DomainModel.dll</HintPath>
     </Reference>
@@ -140,7 +137,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\SiteDefinition.config" />
+    <Content Include="App_Config\Include\SiteDefinition.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MyActiveCommerce.Classes\MyActiveCommerce.Classes.csproj">
@@ -149,7 +148,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Config\Compilation.config" />
